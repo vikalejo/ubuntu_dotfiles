@@ -10,5 +10,10 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-
+alias mai="mysql -u root"
+alias runmai="sudo /etc/init.d/mysql start"
+alias be='bundle exec'
+alias espec='bundle exec rspec -c'
+alias reik='bundle exec rake'
+alias pep='grep -Hri'
 
