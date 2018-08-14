@@ -92,6 +92,9 @@ alias sshpos="ssh dev@paack-postgres.northeurope.cloudapp.azure.com"
 alias sshtest="ssh dev@test.api.paack.co"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export GOPATH=$HOME/Projects/Go
+export GOBIN=$GOPATH/bin
 export PATH="$PATH:/path/to/elixir/bin"
 export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/Projects/Go
+export PATH=$PATH:$GOPATH
+alias dep=$GOBIN/dep
