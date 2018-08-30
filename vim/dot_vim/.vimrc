@@ -210,6 +210,10 @@ nmap <C-x> :pop<CR>
 nmap <M-n> :cn<CR>
 nmap <M-p> :cp<CR>
 
+" Comments vim
+map <C-C> :s:^:#<CR>
+map <C-T> :s:^#<CR>
+
 " nmap <leader>b :FuzzyFinderBuffer<CR>
 " nmap <leader>o :FuzzyFinderTextMate<CR>
 let g:pad_dir="~/Dropbox/Notes/"
