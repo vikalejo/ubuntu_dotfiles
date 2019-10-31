@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/victor/Projects/phoenix'
-let g:netrw_dirhist_2='/home/victor/Projects/wuaki_common'
-let g:netrw_dirhist_3='/home/victor/Projects/cerberus'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/vikalejo/.vim'
+let g:netrw_dirhist_2='/home/vikalejo'
+let g:netrw_dirhist_3='/home/vikalejo/.vim'
+let g:netrw_dirhist_4='/home/vikalejo/.vim/autoload'
+let g:netrw_dirhist_5='/home/vikalejo/.vim'
+let g:netrw_dirhist_6='/home/vikalejo'
+let g:netrw_dirhist_7='/home/vikalejo/.vim'
