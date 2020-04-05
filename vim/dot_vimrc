@@ -86,6 +86,12 @@ nnoremap <Leader>fr :%s/\<<C-r><C-w>\>/
 " Find in files the word under cursor
 nnoremap <Leader>ff :Ack <C-r><C-w>
 
+" Clear highlighting on escape in normal mode
+nnoremap <esc> :noh<return><esc>
+
+" needed so that vim still understands escape sequences
+nnoremap <esc>^[O <esc>^[O
+
 " Jump to tag in new tab
 nnoremap <Leader>g call OpenTagInNewTab()
 function! OpenTagInNewTab()
@@ -104,6 +110,9 @@ function! ToggleNERDTree()
     endif
 endfunction
 " nmap <C-e> :call ToggleNERDTree()<CR>
+
+" Current directory to the current file directory
+autocmd BufEnter * lcd %:p:h"
 
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
