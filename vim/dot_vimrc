@@ -39,6 +39,8 @@ set number
 set nuw=6
 " Set tags file
 set tags=.tags
+" enable fzf (install first fzf)
+set rtp+=~/.fzf
 
 " File type detection
 augroup filetypedetect
@@ -154,7 +156,8 @@ set pastetoggle=<F12>
 map <C-t> :tabnew<CR>
 map <silent> J :tabprevious<CR>
 map <silent> K :tabnext<CR>
-map <silent> <C-o> :FuzzyFinderTextMate<CR>
+" map <silent> <C-o> :FuzzyFinderTextMate<CR>
+map <silent> <C-o> :FZF<CR>
 map <silent> <Leader>t :FuzzyFinderTag<CR>
 map <C-f> :Ack
 let g:ackprg="ack-grep -a -H --nocolor --nogroup --column"
